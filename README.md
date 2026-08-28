@@ -1,5 +1,18 @@
 # React + Vite
 
+## GitHub Pages deployment
+
+The deployment workflow builds the app with Node 24 and publishes `dist` to
+GitHub Pages. Before the first deployment, enable Pages once in the repository:
+
+1. Open **Settings → Pages** in `swtbhsmn/qa`.
+2. Under **Build and deployment**, set **Source** to **GitHub Actions**.
+3. Run the **Deploy React to GitHub Pages** workflow again (or push to `main`).
+
+The site is built under the `/qa/` path (currently `http://swetabh.com/qa/`).
+Hash-based routing is used so refreshing a nested app route works on GitHub
+Pages.
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:

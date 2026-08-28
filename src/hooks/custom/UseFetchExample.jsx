@@ -25,7 +25,7 @@ function useFetch(url) {
 }
 
 function UseFetchExample() {
-  const { data, error, loading } = useFetch('/sample-user.json')
+  const { data, error, loading } = useFetch(`${import.meta.env.BASE_URL}sample-user.json`)
 
   return (
     <section>
